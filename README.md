@@ -1,2 +1,4 @@
-# proyecto_seminario
-#enrique , seba , nico , tomy
+Calculadora Cientificca Avanzada
+
+
+!--- Primer Hito ---!
