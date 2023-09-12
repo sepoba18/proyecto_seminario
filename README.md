@@ -3,7 +3,13 @@ Calculadora Cientificca Avanzada
 
 !--- Primer Hito ---!
 
-Sebastian orellana, 
+Sebastian orellana,
+
+
 Enrique Manzano,
+
+
 Nicolas Sepulveda,
+
+
 Tomás Salinas
