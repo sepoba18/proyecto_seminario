@@ -2,8 +2,13 @@
 #include<math.h>
 using namespace std;
 //Funciones 
+
+
+
+
 float suma(){
     float a , b;
+    cout<<"Suma\n";
     cout<<"Ingrese su primer numero: ";
     cin>>a;
     cout<<"Ingrese su segundo numero: ";
@@ -15,6 +20,7 @@ float suma(){
 
 float resta(){
     float a , b;
+    cout<<"Resta\n";
     cout<<"Ingrese su primer numero: ";
     cin>>a;
     cout<<"Ingrese su segundo numero: ";
@@ -26,6 +32,7 @@ float resta(){
 
 float multiplicacion(){
     float a , b;
+    cout<<"Multiplicacion\n";
     cout<<"Ingrese el primer numero para multiplicar: ";
     cin>>a;
     cout<<"Ingrese su segundo numero para multiplicar: ";
@@ -37,6 +44,7 @@ float multiplicacion(){
 
 float division(){
     float a , b;
+    cout<<"Division\n";
     cout<<"Ingrese el primer numero para porder dividir: ";
     cin>>a;
     cout<<"Ingrese el segundo numero para poder dividir: ";
@@ -46,11 +54,42 @@ float division(){
     return division;
 }
 
-int main(){
+float menu(){
+	int opcion;
+	cout<<"¿Que operacion matematica quieres hacer?";
+	cout<<"\nOpcion 1. Suma\nOpcion 2. Resta\nOpcion 3. Multiplicacion\nOpcion 4. Division\nSi no quieres nada selecciona cualquier numero\nProximas funciones en proceso....";
+	cout<<"Seleccion: ";
+	cin>>opcion;
+	switch(opcion) {
+  	case 1:
     suma();
-	resta();
-	division();
-	multiplicacion();	
-	
+    break;
+  case 2:
+    resta();
+    break;
+	case 3:
+		multiplicacion();
+		break;
+	case 4:
+		division();
+		break;
+  default:
+    cout<< "No elegiste ninguna opcion...Apagando...";
+    break;
+}
+}
+
+
+
+int main(){
+	int opcion;
+	cout<<"Quieres usar la calculadora?\n1.Si\n2.No\n";
+	cout<<"Opcion:\t";
+	cin>>opcion;
+	while(opcion == 1){
+		menu();	
+		cout<<"Quieres usar la calculadora?\n1.Si\n2.No";
+		cin>>opcion;
+	}
 	return 0;
 }
