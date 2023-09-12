@@ -6,6 +6,7 @@
  
 #ifdef __MINGW32__
 #define CLEAR "CLS"
+#define colorear "color b"
 #endif // __MINGW32__
 using namespace std;
 //Funciones 
@@ -93,6 +94,7 @@ float menu(){
 
 
 int main(){
+	system(colorear);
 	int opcion;
 	cout<<"Quieres usar la calculadora?\n1.Si\n2.No\n";
 	cout<<"Opcion:\t";
