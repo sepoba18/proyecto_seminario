@@ -8,6 +8,7 @@ using namespace std;
 
 float suma(){
     float a , b;
+    system("cls");
     cout<<"Suma\n";
     cout<<"Ingrese su primer numero: ";
     cin>>a;
@@ -20,6 +21,7 @@ float suma(){
 
 float resta(){
     float a , b;
+    system("cls");
     cout<<"Resta\n";
     cout<<"Ingrese su primer numero: ";
     cin>>a;
@@ -32,6 +34,7 @@ float resta(){
 
 float multiplicacion(){
     float a , b;
+    system("cls");
     cout<<"Multiplicacion\n";
     cout<<"Ingrese el primer numero para multiplicar: ";
     cin>>a;
@@ -44,6 +47,7 @@ float multiplicacion(){
 
 float division(){
     float a , b;
+    system("cls");
     cout<<"Division\n";
     cout<<"Ingrese el primer numero para porder dividir: ";
     cin>>a;
