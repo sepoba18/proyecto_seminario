@@ -1,41 +1,56 @@
 #include<iostream>
-
-float suma(float a, float b){
-	float suma = a + b;
-
-
-	return suma;
-};
-
-
-float resta(float a,float b){
-	float resta = a-b;
-	return resta;
-};
-
-
-float division(float a,float b){
-	float division = 0;
-	if(b == 0){
-		std::cout << "Division por " << b << " no permitida";
-	}
-	else {
-		float division = a/b;
-	};
-	return division;
+#include<math.h>
+using namespace std;
+//Funciones 
+float suma(){
+    float a , b;
+    cout<<"Ingrese su primer numero: ";
+    cin>>a;
+    cout<<"Ingrese su segundo numero: ";
+    cin>>b;
+    float suma = a + b;
+    cout<<"La suma de sus numeros es"<< suma <<endl;
+    return suma;  
 }
 
-
-float multiplicacion(float a,float b){
-	float multiplicacion = a*b;
-	
-	
-	return multiplicacion;
+float resta(){
+    float a , b;
+    cout<<"Ingrese su primer numero: ";
+    cin>>a;
+    cout<<"Ingrese su segundo numero: ";
+    cin>>b;
+    float resta = a - b;
+    cout<<"La resta de sus numeros es "<<resta<<endl;
+    return resta;
 }
 
-int main() {
-	suma(2,2);
-	resta(2,2);
-	division(2,2);
-	multiplicacion(2,2);	
+float multiplicacion(){
+    float a , b;
+    cout<<"Ingrese el primer numero para multiplicar: ";
+    cin>>a;
+    cout<<"Ingrese su segundo numero para multiplicar: ";
+    cin>>b;
+    float multiplicacion = a*b;
+    cout<<"El resultado de su multiplicacion es "<<multiplicacion<<endl;
+    return multiplicacion;
+}
+
+float division(){
+    float a , b;
+    cout<<"Ingrese el primer numero para porder dividir: ";
+    cin>>a;
+    cout<<"Ingrese el segundo numero para poder dividir: ";
+    cin>>b;
+    float division = a/b;
+    cout<<"El resultado de su division es "<<division<<endl;
+    return division;
+}
+
+int main(){
+    suma();
+	resta();
+	division();
+	multiplicacion();	
+	
+	return 0;
 }
