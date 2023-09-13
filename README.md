@@ -3,4 +3,7 @@ Calculadora Cientificca Avanzada
 
 !--- Primer Hito ---!
 
-Sebastian orellana,Enrique Manzano,Nicolas Sepulveda,Tomás Salinas
+Integrantes:
+Sebastian Orellana,Enrique Manzano,Nicolas Sepulveda,Tomás Salinas
+docente:
+Patricio Olivares
