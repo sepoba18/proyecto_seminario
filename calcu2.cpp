@@ -95,10 +95,13 @@ float pendientes(){
     }
     return pendiente;
 }
+void salir(){
+    exit(0);
+}
 void menu(){
 	int opcion;
 	cout<<"¿Que operacion matematica quieres hacer?";
-	cout<<"\nOpcion 1. Suma\nOpcion 2. Resta\nOpcion 3. Multiplicacion\nOpcion 4. Division\nOpcion 5. Pendiente\nSi no quieres nada selecciona cualquier numero\nProximas funciones en proceso....";
+	cout<<"\nOpcion 1. Suma\nOpcion 2. Resta\nOpcion 3. Multiplicacion\nOpcion 4. Division\nOpcion 5. Pendiente\nOpcion 6. Salir\nSi no quieres nada selecciona cualquier numero\nProximas funciones en proceso....";
 	cout<<"Seleccion: ";
 	cin>>opcion;
 	switch(opcion) {
@@ -117,9 +120,12 @@ void menu(){
     case 5:
         pendientes();
         break;
+    case 6:
+        salir();
+        break;
   default:
     cout<< "No elegiste ninguna opcion Apagando...";
-    break;
+    salir();
 }
 }
 
