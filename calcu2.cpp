@@ -9,10 +9,7 @@
 #define colorear "color b"
 #endif // __MINGW32__
 using namespace std;
-//Funciones 
-
-
-
+//Funciones
 
 float suma(){
     float a , b;
@@ -57,7 +54,7 @@ float division(){
     float a , b;
     system(CLEAR);
     cout<<"Division\n";
-    cout<<"Ingrese el primer numero para porder dividir: ";
+    cout<<"Ingrese el primer numero para poder dividir: ";
     cin>>a;
     cout<<"Ingrese el segundo numero para poder dividir: ";
     cin>>b;
@@ -81,10 +78,13 @@ float pendientes(){
     cout<<"Su ecuacion de la punto pendiente es: y-"<<y1<<"="<<pendiente<<"(x-"<<x1<<")"<<endl;
     return pendiente;
 }
+void salir(){
+    exit(0);
+}
 float menu(){
 	int opcion;
 	cout<<"¿Que operacion matematica quieres hacer?";
-	cout<<"\nOpcion 1. Suma\nOpcion 2. Resta\nOpcion 3. Multiplicacion\nOpcion 4. Division\nOpcion 5. Pendiente\nSi no quieres nada selecciona cualquier numero\nProximas funciones en proceso....";
+	cout<<"\nOpcion 1. Suma\nOpcion 2. Resta\nOpcion 3. Multiplicacion\nOpcion 4. Division\nOpcion 5. Pendiente(En dos puntos del plano)\nOpcion 6. Salir\nSi no quieres nada selecciona cualquier numero\nProximas funciones en proceso....";
 	cout<<"Seleccion: ";
 	cin>>opcion;
 	switch(opcion) {
@@ -103,11 +103,15 @@ float menu(){
     case 5:
         pendientes();
         break;
+    case 6:
+        salir();
+        break;
   default:
     cout<< "No elegiste ninguna opcion...Apagando...";
-    break;
+    salir();
+    }
 }
-}
+
 
 
 
