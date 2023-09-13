@@ -86,11 +86,11 @@ float pendientes(){
     cin>>opcion;
     switch (opcion){
     case 1:
-        cout<<"Su ecuacion de la punto pendiente es: y-"<<y1<<"="<<pendiente<<"(x- "<<x1<<")"<<endl;
+        cout<<"Su ecuacion de la punto pendiente es: y-("<<y1<<")="<<pendiente<<"(x- ("<<x1<<"))"<<endl;
         break;
     
     case 2:
-        cout<<"Su ecuacion de la punto pendiente es: y-"<<y2<<"="<<pendiente<<"(x-"<<x2<<")"<<endl;
+        cout<<"Su ecuacion de la punto pendiente es: y-("<<y2<<")="<<pendiente<<"(x-("<<x2<<"))"<<endl;
         break;
     }
     return pendiente;
