@@ -9,7 +9,10 @@
 #define colorear "color b"
 #endif // __MINGW32__
 using namespace std;
-//Funciones
+//Funciones 
+
+
+
 
 float suma(){
     float a , b;
@@ -54,7 +57,7 @@ float division(){
     float a , b;
     system(CLEAR);
     cout<<"Division\n";
-    cout<<"Ingrese el primer numero para poder dividir: ";
+    cout<<"Ingrese el primer numero para porder dividir: ";
     cin>>a;
     cout<<"Ingrese el segundo numero para poder dividir: ";
     cin>>b;
@@ -64,6 +67,9 @@ float division(){
 }
 float pendientes(){
     float x1, x2, y1 ,y2;
+
+
+
     cout<<"Pendiente\n";
     cout<<"Ingrese el valor de x1: ";
     cin>>x1;
@@ -75,16 +81,24 @@ float pendientes(){
     cin>>y2;
     float pendiente = (y2-y1)/(x2-x1);
     cout<<"Su pendiente es "<<pendiente<<endl;
-    cout<<"Su ecuacion de la punto pendiente es: y-"<<y1<<"="<<pendiente<<"(x-"<<x1<<")"<<endl;
+    int opcion;
+    cout<<"Cual punto quieres usar? Selecciona 1 para --> X1 = " <<x1<< "O Selecciona 2 para --> X2 = " <<x2<<"\n";
+    cin>>opcion;
+    switch (opcion){
+    case 1:
+        cout<<"Su ecuacion de la punto pendiente es: y-"<<y1<<"="<<pendiente<<"(x- "<<x1<<")"<<endl;
+        break;
+    
+    case 2:
+        cout<<"Su ecuacion de la punto pendiente es: y-"<<y2<<"="<<pendiente<<"(x-"<<x2<<")"<<endl;
+        break;
+    }
     return pendiente;
 }
-void salir(){
-    exit(0);
-}
-float menu(){
+void menu(){
 	int opcion;
 	cout<<"¿Que operacion matematica quieres hacer?";
-	cout<<"\nOpcion 1. Suma\nOpcion 2. Resta\nOpcion 3. Multiplicacion\nOpcion 4. Division\nOpcion 5. Pendiente(En dos puntos del plano)\nOpcion 6. Salir\nSi no quieres nada selecciona cualquier numero\nProximas funciones en proceso....";
+	cout<<"\nOpcion 1. Suma\nOpcion 2. Resta\nOpcion 3. Multiplicacion\nOpcion 4. Division\nOpcion 5. Pendiente\nSi no quieres nada selecciona cualquier numero\nProximas funciones en proceso....";
 	cout<<"Seleccion: ";
 	cin>>opcion;
 	switch(opcion) {
@@ -103,15 +117,11 @@ float menu(){
     case 5:
         pendientes();
         break;
-    case 6:
-        salir();
-        break;
   default:
-    cout<< "No elegiste ninguna opcion...Apagando...";
-    salir();
-    }
+    cout<< "No elegiste ninguna opcion Apagando...";
+    break;
 }
-
+}
 
 
 
